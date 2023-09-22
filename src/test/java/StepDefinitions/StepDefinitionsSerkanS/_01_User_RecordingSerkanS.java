@@ -1,6 +1,6 @@
-package StepDefinitionsSerkanS;
+package StepDefinitions.StepDefinitionsSerkanS;
 
-import SerkanSengul.DialogContentSerkanSengul;
+import Pages.PagesSerkanSengul.DialogContentSerkanSengul;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
