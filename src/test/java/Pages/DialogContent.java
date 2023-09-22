@@ -66,34 +66,6 @@ public class DialogContent extends Parent {
     @FindBy(id = "fileUpload")
     public WebElement ChooseFile;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @FindBy(css = "a[class='product-name']")
     public List<WebElement> allSummerDresses;
 
