@@ -13,6 +13,7 @@ public class DialogContent extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
+
     @FindBy(className = "login")
     public WebElement SingButton;
     @FindBy(id = "email_create")
@@ -50,9 +51,21 @@ public class DialogContent extends Parent {
     public WebElement confirmText;
 
 
+
     public WebElement ElementGet(String element) {
         switch (element) {
         }
         return null;
-    }
+    }t
+
+    @FindBy(css ="")
+    public WebElement cardBtn;
+
+    @FindBy(css ="")
+    public WebElement checkOutBtn;
+
+    @FindBy(css ="")
+    public WebElement adresChecked;
+
+
 }
