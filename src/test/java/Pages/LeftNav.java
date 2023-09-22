@@ -12,11 +12,7 @@ public class LeftNav extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    @FindBy(linkText = "Women")
-    public WebElement womenButton;
 
-    @FindBy(linkText = "Summer Dresses")
-    public WebElement summerDressesButton;
 
     public WebElement GetWebelement(String element) {
         switch (element) {

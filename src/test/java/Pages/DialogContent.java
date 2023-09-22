@@ -10,15 +10,6 @@ import java.util.List;
 
 public class DialogContent extends Parent {
 
-    @FindBy(css = "ul[id='product_list'] img")
-    public List<WebElement> allSummerDresses;
-
-    @FindBy(id = "add_to_cart")
-    public WebElement addToCartButton;
-
-    @FindBy(css = "td[class='cart_description'] > p")
-    public WebElement productsInCart;
-
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
