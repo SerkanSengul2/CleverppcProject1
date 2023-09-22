@@ -49,6 +49,15 @@ public class DialogContent extends Parent {
     @FindBy(css = "p[class='alert alert-success']")
     public WebElement Verify;
 
+
+
+    @FindBy(id = "email")
+    public WebElement EmailAdress;
+    @FindBy(id = "SubmitLogin")
+    public WebElement LoginButton;
+
+
+
     @FindBy(css = "a[class='product-name']")
     public List<WebElement> allSummerDresses;
 
@@ -58,12 +67,27 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//span[@class='title'])[1]")
     public WebElement confirmText;
 
+
     @FindBy(css = "span[class='cat-name']")
     public WebElement dressesText;
+
+
+
 
     public WebElement ElementGet(String element) {
         switch (element) {
         }
         return null;
-    }
+    }t
+
+    @FindBy(css ="")
+    public WebElement cardBtn;
+
+    @FindBy(css ="")
+    public WebElement checkOutBtn;
+
+    @FindBy(css ="")
+    public WebElement adresChecked;
+
+
 }

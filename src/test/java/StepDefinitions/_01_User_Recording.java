@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 public class _01_User_Recording {
     DialogContent dc = new DialogContent();
 
-    @Given("Navigate to Campus")
+    @Given("Navigate to Site")
     public void navigateToCampus() {
         GWD.getDriver().get("https://cleverppc.com/prestashop4/");
 
@@ -26,7 +26,7 @@ public class _01_User_Recording {
 
     @And("Enter E-mail adress and write your mail adress")
     public void enterEMailAdress() {
-        dc.MysendKeys(dc.Email, "TesTGrup3@gmail.com");
+        dc.MysendKeys(dc.Email, "Grup3T3echno@gmail.com");
         dc.Myclick(dc.CreatAcc);
 
     }
