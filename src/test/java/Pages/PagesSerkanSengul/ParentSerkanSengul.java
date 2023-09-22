@@ -1,4 +1,4 @@
-package SerkanSengul;
+package Pages.PagesSerkanSengul;
 
 
 import Utilities.GWD;
