@@ -13,6 +13,36 @@ public class DialogContent extends Parent {
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
+
+    @FindBy(className = "login")
+    public WebElement SingButton;
+    @FindBy(id = "email_create")
+    public WebElement Email;
+    @FindBy(id = "SubmitCreate")
+    public WebElement CreatAcc;
+    @FindBy(id = "id_gender1")
+    public WebElement MrSelect;
+    @FindBy(id = "customer_firstname")
+    public WebElement Firstname;
+    @FindBy(id = "customer_lastname")
+    public WebElement LastName;
+    @FindBy(id = "passwd")
+    public WebElement Password;
+    @FindBy(id = "days")
+    public WebElement Days;
+    @FindBy(id = "months")
+    public WebElement Months;
+    @FindBy(id = "years")
+    public WebElement Years;
+
+    @FindBy(id = "submitAccount")
+    public WebElement SubmitAccount;
+    @FindBy(css = "p[class='alert alert-success']")
+    public WebElement Verify;
+
+
+
+
     public WebElement ElementGet(String element) {
         switch (element) {
 
