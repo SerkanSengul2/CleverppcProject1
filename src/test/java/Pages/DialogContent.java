@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.GWD;
+
 import java.util.List;
 
 public class DialogContent extends Parent {
@@ -13,6 +14,7 @@ public class DialogContent extends Parent {
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
+
     public WebElement ElementGet(String element) {
         switch (element) {
 
@@ -21,6 +23,14 @@ public class DialogContent extends Parent {
         return null;
     }
 
+    @FindBy(css ="")
+    public WebElement cardBtn;
+
+    @FindBy(css ="")
+    public WebElement checkOutBtn;
+
+    @FindBy(css ="")
+    public WebElement adresChecked;
 
 }
 
