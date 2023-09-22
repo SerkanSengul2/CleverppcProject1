@@ -13,8 +13,6 @@ public class DialogContent extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-<<<<<<< SerkanOzsahin
-=======
     @FindBy(className = "login")
     public WebElement SingButton;
     @FindBy(id = "email_create")
@@ -41,7 +39,7 @@ public class DialogContent extends Parent {
     @FindBy(css = "p[class='alert alert-success']")
     public WebElement Verify;
 
->>>>>>> master
+
     @FindBy(css = "a[class='product-name']")
     public List<WebElement> allSummerDresses;
 
@@ -51,10 +49,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//span[@class='title'])[1]")
     public WebElement confirmText;
 
-<<<<<<< SerkanOzsahin
-=======
 
->>>>>>> master
     public WebElement ElementGet(String element) {
         switch (element) {
         }
