@@ -17,6 +17,9 @@ public class LeftNav extends Parent {
     @FindBy(linkText = "Summer Dresses")
     public WebElement summerDressesButton;
 
+    @FindBy(linkText = "Dresses")
+    public WebElement dressesButton;
+
     public WebElement GetWebelement(String element) {
         switch (element) {
         }
