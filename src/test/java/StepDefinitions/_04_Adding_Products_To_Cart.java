@@ -37,7 +37,7 @@ public class _04_Adding_Products_To_Cart {
         }
     }
 
-    @Then("user clicks on the Add to cart button")
+    @Then("user clicks on the add to cart button")
     public void userClicksOnTheAddToCartButton() {
 
         dc.Myclick(dc.addToCartButton);
