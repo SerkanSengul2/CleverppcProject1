@@ -1,4 +1,4 @@
-package java.Runners;
+package Runners;
 
 import com.aventstack.extentreports.service.ExtentService;
 import io.cucumber.testng.AbstractTestNGCucumberTests;

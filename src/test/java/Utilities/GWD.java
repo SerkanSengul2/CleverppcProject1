@@ -1,4 +1,4 @@
-package java.Utilities;
+package Utilities;
 
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
