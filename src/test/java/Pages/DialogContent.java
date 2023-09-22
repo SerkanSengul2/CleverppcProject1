@@ -46,6 +46,47 @@ public class DialogContent extends Parent {
     @FindBy(id = "SubmitLogin")
     public WebElement LoginButton;
 
+    @FindBy(xpath = "(//*[@title='Contact us'])[1]")
+    public WebElement ContactUS;
+    @FindBy(id = "id_contact")
+    public WebElement SubjectHeading;
+    @FindBy(id = "message")
+    public WebElement Message;
+    @FindBy(id = "fileUpload")
+    public WebElement ChooseFile;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public WebElement ElementGet(String element) {
         switch (element) {
 
