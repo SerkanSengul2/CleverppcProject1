@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.GWD;
+
 import java.util.List;
 
 public class DialogContent extends Parent {
@@ -40,8 +41,10 @@ public class DialogContent extends Parent {
     @FindBy(css = "p[class='alert alert-success']")
     public WebElement Verify;
 
-
-
+    @FindBy(id = "email")
+    public WebElement EmailAdress;
+    @FindBy(id = "SubmitLogin")
+    public WebElement LoginButton;
 
     public WebElement ElementGet(String element) {
         switch (element) {
