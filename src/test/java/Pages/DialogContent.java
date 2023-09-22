@@ -1,8 +1,10 @@
 package Pages;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import Utilities.GWD;
 
 import java.util.List;
@@ -50,22 +52,53 @@ public class DialogContent extends Parent {
     public WebElement Verify;
 
 
-
     @FindBy(id = "email")
     public WebElement EmailAdress;
     @FindBy(id = "SubmitLogin")
     public WebElement LoginButton;
+
+    @FindBy(xpath = "(//*[@title='Contact us'])[1]")
+    public WebElement ContactUS;
+    @FindBy(id = "id_contact")
+    public WebElement SubjectHeading;
+    @FindBy(id = "message")
+    public WebElement Message;
+    @FindBy(id = "fileUpload")
+    public WebElement ChooseFile;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     @FindBy(css = "a[class='product-name']")
     public List<WebElement> allSummerDresses;
 
-    @FindBy(css = "button[name='Submit'] > span")
-    public WebElement addToCartButton;
 
-    @FindBy(xpath = "(//span[@class='title'])[1]")
-    public WebElement confirmText;
+
 
 
     @FindBy(css = "span[class='cat-name']")
@@ -76,18 +109,13 @@ public class DialogContent extends Parent {
 
     public WebElement ElementGet(String element) {
         switch (element) {
+
         }
+
         return null;
-    }t
-
-    @FindBy(css ="")
-    public WebElement cardBtn;
-
-    @FindBy(css ="")
-    public WebElement checkOutBtn;
-
-    @FindBy(css ="")
-    public WebElement adresChecked;
+    }
 
 
 }
+
+
