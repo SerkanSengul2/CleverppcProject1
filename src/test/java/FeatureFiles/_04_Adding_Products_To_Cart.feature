@@ -5,3 +5,4 @@ Feature: Adding Products to Cart
     When user selects a random product
     Then user clicks on the Add to cart button
     And product should be successfully added to the cart
+
