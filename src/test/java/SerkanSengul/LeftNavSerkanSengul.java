@@ -1,13 +1,13 @@
-package Pages;
+package SerkanSengul;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import Pages.Parent;
 import Utilities.GWD;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
-public class LeftNav extends Parent {
+public class LeftNavSerkanSengul extends Parent {
 
-    public LeftNav() {
+    public LeftNavSerkanSengul() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
