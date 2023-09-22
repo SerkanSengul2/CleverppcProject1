@@ -1,16 +1,16 @@
-package StepDefinitions;
+package StepDefinitionsSerkanS;
 
-import Pages.DialogContent;
+import SerkanSengul.DialogContentSerkanSengul;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
-public class _01_User_Recording {
-    DialogContent dc = new DialogContent();
+public class _01_User_RecordingSerkanS {
+
+    DialogContentSerkanSengul dc = new DialogContentSerkanSengul();
 
     @Given("Navigate to Site")
     public void navigateToCampus() {
@@ -46,7 +46,6 @@ public class _01_User_Recording {
 
         Select SelectYears = new Select(dc.Years);
         SelectYears.selectByValue("1990");
-
     }
 
     @And("Click Register Button")
@@ -62,3 +61,5 @@ public class _01_User_Recording {
         System.out.println("Account başarılı ile yartıldı. =" + dc.Verify.getText());
     }
 }
+
+
