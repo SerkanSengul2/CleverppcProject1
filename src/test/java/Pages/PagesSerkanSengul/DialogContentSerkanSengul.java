@@ -66,10 +66,18 @@ public class DialogContentSerkanSengul extends Parent {
     @FindBy(id = "uniform-fileUpload")
     public WebElement ChooseFile;
 
+    @FindBy(xpath = "(//*[@class='form-control'])[2]")
+    public WebElement OrderRef;
+
+    @FindBy(id = "submitMessage")
+    public WebElement Send;
+    @FindBy(id = "87_order_products")
+    public WebElement Product;
 
     public WebElement ElementGet(String element) {
         switch (element) {
-
+            case "SingButton":
+                return SingButton;
         }
 
         return null;
