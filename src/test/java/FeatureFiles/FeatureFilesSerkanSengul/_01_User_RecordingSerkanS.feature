@@ -4,7 +4,7 @@ Feature: Login Functionality
 
     Given  Navigate to Site
     When Click "SingButton"
-    And Enter E-mail adress and write your mail adress
+    And Write E-mail and Click CreateButton
     Then Select Title,Enter Firstname,Lastname,Password and Date of Birth
     And Click Register Button
     Then User should login successfully
