@@ -10,8 +10,6 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
-import java.util.Random;
-
 public class _04_AddingProductstoCart {
 
     SOLeftNav ln = new SOLeftNav();
@@ -30,11 +28,8 @@ public class _04_AddingProductstoCart {
     @When("user selects a random product")
     public void userSelectsARandomProduct() {
 
-        Random rand = new Random();
-        for (int i = 0; i < dc.allSummerDresses.size(); i++) {
-            int randomDress = rand.nextInt(dc.allSummerDresses.size());
-            dc.allSummerDresses.get(randomDress).click();
-        }
+        int randomDress = (int) (Math.random() * dc.allSummerDresses.size());
+        dc.allSummerDresses.get(randomDress).click();
     }
 
     @Then("user clicks on the add to cart button")
