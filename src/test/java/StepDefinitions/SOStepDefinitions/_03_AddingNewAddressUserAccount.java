@@ -24,6 +24,7 @@ public class _03_AddingNewAddressUserAccount {
         dc.MysendKeys(dc.emailText, "serkan@gmail.com");
         dc.MysendKeys(dc.passwordText, "12345");
         dc.Myclick(dc.submitButton);
+        dc.Myclick(dc.backToMainPage);
     }
 
     @When("user clicks on the sitemap link and directed to the sitemap page")
