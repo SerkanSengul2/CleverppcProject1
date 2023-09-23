@@ -20,4 +20,7 @@ public class SOLeftNav extends Parent {
 
     @FindBy(xpath = "(//*[@title='Dresses'])[2]")
     public WebElement dressesButton;
+
+    @FindBy(css = "a[title='View my shopping cart']")
+    public WebElement cartButton;
 }

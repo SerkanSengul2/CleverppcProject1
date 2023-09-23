@@ -63,7 +63,7 @@ public class _03_Adding_New_Address_User_Account {
     public void addressShouldBeSuccessfullyAdded() {
 
         dc.VerifycontainsText(dc.addressConfirm, "MY ADDRESS2");
-        dc.Myclick(dc.deleteSecondAdress);
+        dc.Myclick(dc.deleteSecondAddress);
         GWD.getDriver().switchTo().alert().accept();
     }
 }
