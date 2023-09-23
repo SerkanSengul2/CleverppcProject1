@@ -101,6 +101,15 @@ public class SODialogContent extends Parent {
     @FindBy(css = "div[id='center_column'] > h1")
     public WebElement bestSellerText;
 
+    @FindBy(id = "facebook_block")
+    public WebElement facebookBlock;
+
+    @FindBy(css = "a[target='_blank']")
+    public WebElement facebookLink;
+
+    @FindBy(css = "[title='Xu Clothing']")
+    public WebElement backToMainPage;
+
     public WebElement getWebElement(String strElement) {
 
         switch (strElement) {
