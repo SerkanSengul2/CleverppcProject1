@@ -11,7 +11,7 @@ import org.testng.Assert;
 
 import java.util.Random;
 
-public class _09_Products_Price_Check {
+public class _09_ProductsPriceCheck {
 
     SOLeftNav ln = new SOLeftNav();
     SODialogContent dc = new SODialogContent();
