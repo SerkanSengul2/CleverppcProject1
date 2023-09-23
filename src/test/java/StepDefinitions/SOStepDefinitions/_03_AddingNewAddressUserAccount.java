@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class _03_Adding_New_Address_User_Account {
+public class _03_AddingNewAddressUserAccount {
 
     SODialogContent dc = new SODialogContent();
 

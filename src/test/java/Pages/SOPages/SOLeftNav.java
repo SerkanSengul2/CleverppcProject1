@@ -23,4 +23,7 @@ public class SOLeftNav extends Parent {
 
     @FindBy(css = "a[title='View my shopping cart']")
     public WebElement cartButton;
+
+    @FindBy(id = "search_query_top")
+    public WebElement search;
 }

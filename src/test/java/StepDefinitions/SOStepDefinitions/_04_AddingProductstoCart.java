@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.Random;
 
-public class _04_AddingProductsToCart {
+public class _04_AddingProductstoCart {
 
     SOLeftNav ln = new SOLeftNav();
     SODialogContent dc = new SODialogContent();
