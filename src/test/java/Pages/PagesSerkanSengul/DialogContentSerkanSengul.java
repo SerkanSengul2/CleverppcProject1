@@ -74,6 +74,19 @@ public class DialogContentSerkanSengul extends Parent {
     @FindBy(id = "87_order_products")
     public WebElement Product;
 
+    @FindBy(id = "search_query_top")
+    public WebElement SearchBox;
+
+    @FindBy(xpath = "(//*[@title='Printed Summer Dress'])[6]")
+    public WebElement Productitem;
+
+    @FindBy(id = "add_to_cart")
+    public WebElement AddToCart;
+    @FindBy(xpath = "(//*[@class='icon-chevron-right right'])[2]")
+    public WebElement Proceed;
+    @FindBy(css = "[title='Delete']")
+    public WebElement DeleteBtn;
+
     public WebElement ElementGet(String element) {
         switch (element) {
             case "SingButton":

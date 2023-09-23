@@ -38,9 +38,9 @@ public class _01_User_RecordingSerkanS {
         }
 
 
-    @And("Enter E-mail adress and write your mail adress")
+    @And("Write E-mail and Click CreateButton")
     public void enterEMailAdress() {
-        dc.MysendKeys(dc.Email, "Grup3T3echno@gmail.com");
+        dc.MysendKeys(dc.Email, "Grup3Techno3@gmail.com");
         dc.Myclick(dc.CreatAcc);
 
     }
