@@ -92,6 +92,9 @@ public class SODialogContent extends Parent {
     @FindBy(id = "total_product")
     public WebElement totalPrice;
 
+    @FindBy(css = "div[id='center_column'] > p")
+    public WebElement alertText;
+
     public WebElement getWebElement(String strElement) {
 
         switch (strElement) {
