@@ -2,27 +2,41 @@ package StepDefinitions.StepDefinitionsSerkanS;
 
 import Pages.PagesSerkanSengul.DialogContentSerkanSengul;
 import Utilities.GWD;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class _01_User_RecordingSerkanS {
 
     DialogContentSerkanSengul dc = new DialogContentSerkanSengul();
 
     @Given("Navigate to Site")
-    public void navigateToCampus() {
+     public void navigateToCampus() {
         GWD.getDriver().get("https://cleverppc.com/prestashop4/");
 
     }
 
-    @When("Click on Sing in Button")
-    public void clickOnSingInButton() {
-        dc.Myclick(dc.SingButton);
+    @When("Click {string}")
+    public void click(String Click) {
+        WebElement BtnClick=dc.ElementGet(Click);
+        dc.Myclick(BtnClick);
+    }
+
+    @When("Click on <sing> in Button")
+    public void clickOnSingInButton(DataTable Click) {
+        List<String>Clicks=Click.asList(String.class);
+        for (int i = 0; i <Clicks.size(); i++) {
 
     }
+
+        }
+
 
     @And("Enter E-mail adress and write your mail adress")
     public void enterEMailAdress() {
@@ -61,6 +75,14 @@ public class _01_User_RecordingSerkanS {
         dc.VerifycontainsText(dc.Verify, "created");
         System.out.println("Account başarılı ile yartıldı. =" + dc.Verify.getText());
     }
+
+
+
+
+
+
+
+
 }
 
 

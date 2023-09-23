@@ -1,10 +1,14 @@
 Feature:Sending E-mail
   Background:
     Given  Navigate to Site
-    When Click on Sing in Button
+    When Click "SingButton"
     Then Enter E-mail adress And Password
     And Click on Sing in
   Scenario:
     And Click Contact Us button
-    Then Select SubjectHeading and Send Message
-    And Click Attach File
+    Then Select SubjectHeading,Order Reference
+    And  Select Product and Send Massage
+    Then Click Attach File
+    And Upload File with RobotClass
+    Then Click Send Product
+    And Successfully sending
