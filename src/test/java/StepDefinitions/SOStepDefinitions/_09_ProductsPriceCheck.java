@@ -41,7 +41,7 @@ public class _09_ProductsPriceCheck {
         double total = 0;
         for (WebElement all : dc.productsPrice) {
             double productsPrice = Double.parseDouble(all.getText().replaceAll("[^0-9.]", ""));
-            total = total + productsPrice;
+            total += productsPrice;
         }
         double totalPrice = Double.parseDouble(dc.totalPrice.getText().replaceAll("[^0-9.]", ""));
         Assert.assertEquals(total, totalPrice);
