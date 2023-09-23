@@ -95,6 +95,12 @@ public class SODialogContent extends Parent {
     @FindBy(css = "div[id='center_column'] > p")
     public WebElement alertText;
 
+    @FindBy(linkText = "Best sellers")
+    public WebElement bestSellersButton;
+
+    @FindBy(css = "div[id='center_column'] > h1")
+    public WebElement bestSellerText;
+
     public WebElement getWebElement(String strElement) {
 
         switch (strElement) {
