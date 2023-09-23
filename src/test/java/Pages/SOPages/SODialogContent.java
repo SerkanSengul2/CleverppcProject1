@@ -81,7 +81,16 @@ public class SODialogContent extends Parent {
     public WebElement addressConfirm;
 
     @FindBy(xpath = "(//a[@title='Delete'])[2]")
-    public WebElement deleteSecondAdress;
+    public WebElement deleteSecondAddress;
+
+    @FindBy(css = "span[title='Continue shopping']")
+    public WebElement continueShoppingButton;
+
+    @FindBy(css = "td[data-title='Total'] span")
+    public List<WebElement> productsPrice;
+
+    @FindBy(id = "total_product")
+    public WebElement totalPrice;
 
     public WebElement getWebElement(String strElement) {
 
