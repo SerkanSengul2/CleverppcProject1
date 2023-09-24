@@ -1,7 +1,13 @@
 Feature: Adding new address user account
 
+  Background:
+    Given  Navigate to Site
+    When Click "SingButton"
+    Then Enter E-mail adress And Password
+    And Click on Sing in
+
   Scenario: User adds a new address
-    Given navigate to website
+    
     When user clicks on the sitemap link and directed to the sitemap page
     Then user clicks on the address link and directed to the address page
     And user clicks on the add a new address button

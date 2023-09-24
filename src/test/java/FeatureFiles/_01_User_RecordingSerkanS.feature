@@ -4,8 +4,8 @@ Feature: Login Functionality
 
     Given  Navigate to Site
     When Click "SingButton"
-    And Write E-mail and Click CreateButton
-    Then Select Title,Enter Firstname,Lastname,Password and Date of Birth
+    And Write "Email" and Click "CreateAcc"
+    Then Select "MrSelect",Enter "Firstname","LastName","Password" and Date of Birth
     And Click Register Button
     Then User should login successfully
 

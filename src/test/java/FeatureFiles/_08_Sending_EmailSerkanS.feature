@@ -4,7 +4,7 @@ Feature:Sending E-mail
     When Click "SingButton"
     Then Enter E-mail adress And Password
     And Click on Sing in
-  Scenario:
+  Scenario: Sending E-Mail
     And Click Contact Us button
     Then Select SubjectHeading,Order Reference
     And  Select Product and Send Massage

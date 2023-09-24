@@ -1,7 +1,7 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
-import Pages.SOPages.SOLeftNav;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -12,13 +12,13 @@ import org.openqa.selenium.interactions.Actions;
 
 public class _04_AddingProductstoCart {
 
-    SOLeftNav ln = new SOLeftNav();
-    SODialogContent dc = new SODialogContent();
+    LeftNav ln=new LeftNav();
+    DialogContent dc=new DialogContent();
 
     @Given("navigate to summer dresses")
     public void navigateToSummerDresses() {
 
-        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
+
         Actions actions = new Actions(GWD.getDriver());
         Action aksiyon = actions.moveToElement(ln.womenButton).build();
         aksiyon.perform();

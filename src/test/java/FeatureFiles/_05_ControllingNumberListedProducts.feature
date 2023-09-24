@@ -1,5 +1,11 @@
 Feature: Controlling Number Listed Products
 
+  Background:
+    Given  Navigate to Site
+    When Click "SingButton"
+    Then Enter E-mail adress And Password
+    And Click on Sing in
+
   Scenario: Verify the product list on the dresses category
     Given navigate to dresses
     When user is at the dresses page

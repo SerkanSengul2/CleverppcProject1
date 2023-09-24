@@ -1,14 +1,14 @@
-package StepDefinitions.StepDefinitionsSerkanS;
+package StepDefinitions;
 
-import Pages.PagesSerkanSengul.DialogContentSerkanSengul;
+import Pages.DialogContent;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-public class _14_DeleteProductSerkanS {
-    DialogContentSerkanSengul dc = new DialogContentSerkanSengul();
+public class _13_DeleteProductSerkanS {
+    DialogContent dc=new DialogContent();
 
     @Then("Enter Product Searchbox")
     public void enterProductSearchboxAndClick() {

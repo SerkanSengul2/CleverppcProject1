@@ -1,7 +1,7 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
-import Pages.SOPages.SOLeftNav;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -11,13 +11,12 @@ import org.testng.Assert;
 
 public class _05_ControllingNumberListedProducts {
 
-    SOLeftNav ln = new SOLeftNav();
-    SODialogContent dc = new SODialogContent();
+    LeftNav ln=new LeftNav();
+    DialogContent dc=new DialogContent();
 
     @Given("navigate to dresses")
     public void navigateToDresses() {
 
-        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
         ln.Myclick(ln.dressesButton);
     }
 

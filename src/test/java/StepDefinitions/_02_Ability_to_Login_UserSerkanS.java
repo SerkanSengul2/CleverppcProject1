@@ -1,11 +1,11 @@
-package StepDefinitions.StepDefinitionsSerkanS;
+package StepDefinitions;
 
-import Pages.PagesSerkanSengul.DialogContentSerkanSengul;
+import Pages.DialogContent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
 public class _02_Ability_to_Login_UserSerkanS {
-    DialogContentSerkanSengul dc = new DialogContentSerkanSengul();
+    DialogContent dc=new DialogContent();
 
     @Then("Enter E-mail adress And Password")
     public void enterEMailAdressAndPassword() {

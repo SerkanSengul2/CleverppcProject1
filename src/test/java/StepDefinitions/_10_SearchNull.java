@@ -1,15 +1,15 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
-import Pages.SOPages.SOLeftNav;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 
 public class _10_SearchNull {
 
-    SOLeftNav ln = new SOLeftNav();
-    SODialogContent dc = new SODialogContent();
+    LeftNav ln=new LeftNav();
+    DialogContent dc=new DialogContent();
 
     @When("user search with null")
     public void userSearchWithNull() {

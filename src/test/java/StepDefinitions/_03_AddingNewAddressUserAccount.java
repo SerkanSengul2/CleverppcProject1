@@ -1,6 +1,6 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
+import Pages.DialogContent;
 import Utilities.GWD;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
@@ -14,18 +14,9 @@ import java.util.List;
 
 public class _03_AddingNewAddressUserAccount {
 
-    SODialogContent dc = new SODialogContent();
+    DialogContent dc=new DialogContent();
 
-    @Given("navigate to website")
-    public void navigateToWebsite() {
 
-        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-        dc.Myclick(dc.signInButton);
-        dc.MysendKeys(dc.emailText, "serkan@gmail.com");
-        dc.MysendKeys(dc.passwordText, "12345");
-        dc.Myclick(dc.submitButton);
-        dc.Myclick(dc.backToMainPage);
-    }
 
     @When("user clicks on the sitemap link and directed to the sitemap page")
     public void userClicksOnTheSitemapLinkAndDirectedToTheSitemapPage() {
@@ -53,7 +44,7 @@ public class _03_AddingNewAddressUserAccount {
         Select ddMenu = new Select(dc.state);
         List<List<String>> items = dt.asLists(String.class);
         for (int i = 0; i < items.size(); i++) {
-            WebElement e = dc.getWebElement(items.get(i).get(0));
+            WebElement e = dc.ElementGet(items.get(i).get(0));
             dc.MysendKeys(e, items.get(i).get(1));
         }
         ddMenu.selectByIndex(5);

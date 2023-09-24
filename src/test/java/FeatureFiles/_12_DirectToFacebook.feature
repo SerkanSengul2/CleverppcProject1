@@ -1,6 +1,11 @@
 Feature: Direct to Facebook
 
+  Background:
+    Given  Navigate to Site
+    When Click "SingButton"
+    Then Enter E-mail adress And Password
+    And Click on Sing in
+
   Scenario: Direct to Facebook
-    Given navigate to website
     When user clicks on the facebook link
     Then user should be directed to facebook website

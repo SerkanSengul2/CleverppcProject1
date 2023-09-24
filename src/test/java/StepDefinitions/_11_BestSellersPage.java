@@ -1,12 +1,14 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class _11_BestSellersPage {
 
-    SODialogContent dc = new SODialogContent();
+
+    DialogContent dc=new DialogContent();
 
     @When("user clicks on best sellers")
     public void userClicksOnBestSellers() {

@@ -1,5 +1,11 @@
 Feature: Products price check in cart
 
+  Background:
+    Given  Navigate to Site
+    When Click "SingButton"
+    Then Enter E-mail adress And Password
+    And Click on Sing in
+
   Scenario: Products price check
     Given navigate to dresses
     When user selects three random products

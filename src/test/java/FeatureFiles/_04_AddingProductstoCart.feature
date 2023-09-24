@@ -1,5 +1,11 @@
 Feature: Adding Products to Cart
 
+  Background:
+    Given  Navigate to Site
+    When Click "SingButton"
+    Then Enter E-mail adress And Password
+    And Click on Sing in
+
   Scenario: User adds a product to the cart
     Given navigate to summer dresses
     When user selects a random product

@@ -1,6 +1,7 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,11 +11,12 @@ import java.util.Set;
 
 public class _12_DirectToFacebook {
 
-    SODialogContent dc = new SODialogContent();
+
+    DialogContent dc=new DialogContent();
 
     @When("user clicks on the facebook link")
     public void userClicksOnTheFacebookLink() {
-
+        dc.Myclick(dc.backToMainPage);
         dc.scrollToElement(dc.facebookBlock);
         dc.Myclick(dc.facebookLink);
     }

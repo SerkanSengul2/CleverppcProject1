@@ -1,7 +1,7 @@
-package StepDefinitions.SOStepDefinitions;
+package StepDefinitions;
 
-import Pages.SOPages.SODialogContent;
-import Pages.SOPages.SOLeftNav;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -13,8 +13,8 @@ import java.util.Random;
 
 public class _09_ProductsPriceCheck {
 
-    SOLeftNav ln = new SOLeftNav();
-    SODialogContent dc = new SODialogContent();
+    LeftNav ln=new LeftNav();
+    DialogContent dc=new DialogContent();
 
     @When("user selects three random products")
     public void userSelectsThreeRandomProducts() {

@@ -1,12 +1,8 @@
-package StepDefinitions.StepDefinitionsSerkanS;
+package StepDefinitions;
 
-import Pages.PagesSerkanSengul.DialogContentSerkanSengul;
-import io.cucumber.datatable.internal.difflib.myers.MyersDiff;
+import Pages.DialogContent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.eo.Se;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
 import java.awt.*;
@@ -14,7 +10,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 public class _08_Sending_EmailSerkanS {
-    DialogContentSerkanSengul dc = new DialogContentSerkanSengul();
+    DialogContent dc=new DialogContent();
 
     @And("Click Contact Us button")
     public void clickContactUsButton() {
