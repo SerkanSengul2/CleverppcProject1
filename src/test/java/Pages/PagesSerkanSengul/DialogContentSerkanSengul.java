@@ -41,8 +41,17 @@ public class DialogContentSerkanSengul extends Parent {
     @FindBy(id = "months")
     public WebElement Months;
 
-    @FindBy(id = "years")
+    @FindBy(id = "uniform-years")
     public WebElement Years;
+
+    @FindBy(xpath = "(//option[@value='3'])[1]")
+    public WebElement DaysO;
+
+    @FindBy(xpath = "(//option[@value='3'])[2]")
+    public WebElement Months0;
+    @FindBy(xpath = "//option[@value='1990']")
+    public WebElement Years0;
+
 
     @FindBy(id = "submitAccount")
     public WebElement SubmitAccount;
@@ -89,8 +98,18 @@ public class DialogContentSerkanSengul extends Parent {
 
     public WebElement ElementGet(String element) {
         switch (element) {
-            case "SingButton":
-                return SingButton;
+            case "SingButton": return SingButton;
+            case "MrSelect": return MrSelect;
+            case "Firstname": return Firstname;
+            case "LastName": return LastName;
+            case "Days": return Days;
+            case "DaysO": return DaysO;
+            case "Months": return Months;
+            case "Months0": return Months0;
+            case "Years": return Years;
+            case "Years0": return Years0;
+            case "Password": return Password;
+            case "SubmitAccount":return SubmitAccount;
         }
 
         return null;
