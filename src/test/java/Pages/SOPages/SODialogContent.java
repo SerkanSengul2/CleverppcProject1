@@ -138,4 +138,6 @@ public class SODialogContent extends Parent {
 
     @FindBy(id = "SubmitLogin")
     public WebElement submitButton;
+
+
 }
