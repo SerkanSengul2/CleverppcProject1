@@ -1,7 +1,7 @@
 Feature: Checking Products Added Cart
 
   Scenario User checks the products added to cart
-    Given Navigate to dresses page
+    Given Navigate to Site
     When User selects a random product and click on add to cart
     Then User clicks on continue shopping button
     And User selects a different product and clicks on add to cart button

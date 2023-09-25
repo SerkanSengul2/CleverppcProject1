@@ -1,7 +1,7 @@
 package StepDefinitions.StepDefinitionsIrem;
 
-import Pages.PagesIrem.iremDialogContent;
-import Pages.PagesIrem.iremLeftNav;
+import Pages.iremDialogContent;
+import Pages.iremLeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -12,10 +12,10 @@ public class _04_CheckingProductsAddedCart {
 
       iremDialogContent dc=new iremDialogContent();
       iremLeftNav ln=new iremLeftNav();
-    @Given("Navigate to dresses page")
+    @Given("Navigate to Site")
     public void navigateToDressesPage() {
         GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-        ln.Myclick(ln.Dresses2);
+        //ln.Myclick(ln.Dresses2);
     }
 
     @When("User selects a random product and click on add to cart")

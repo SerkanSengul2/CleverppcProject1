@@ -1,6 +1,6 @@
-package Pages.PagesIrem;
+package Pages;
 
-import Pages.Parent;
+
 import Utilities.GWD;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
