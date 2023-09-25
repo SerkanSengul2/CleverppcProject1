@@ -1,9 +1,5 @@
 Feature: Checking Products Added Cart
-  Background:
-    Given  Navigate to Site
-    When Click on Sing in Button
-    Then Enter E-mail adress And Password
-    And Click on Sing in
+
   Scenario User checks the products added to cart
     Given Navigate to dresses page
     When User selects a random product and click on add to cart

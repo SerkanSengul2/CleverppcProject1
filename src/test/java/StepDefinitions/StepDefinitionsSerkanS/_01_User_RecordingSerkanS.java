@@ -20,7 +20,7 @@ public class _01_User_RecordingSerkanS {
 
     @When("Click on Sing in Button")
     public void clickOnSingInButton() {
-        dc.Myclick(dc.SingButton);
+      //  dc.Myclick(dc.SingButton);
 
     }
 

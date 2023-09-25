@@ -15,7 +15,7 @@ public class _04_CheckingProductsAddedCart {
     @Given("Navigate to dresses page")
     public void navigateToDressesPage() {
         GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-        ln.Myclick(ln.Dresses);
+        ln.Myclick(ln.Dresses2);
     }
 
     @When("User selects a random product and click on add to cart")

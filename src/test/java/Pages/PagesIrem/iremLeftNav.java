@@ -10,5 +10,5 @@ public class iremLeftNav extends Parent {
     public iremLeftNav() { PageFactory.initElements(GWD.getDriver(), this);}
 
     @FindBy(xpath ="(//a[text()='Dresses'])[1]" )
-    public WebElement Dresses;
+    public WebElement Dresses2;
 }

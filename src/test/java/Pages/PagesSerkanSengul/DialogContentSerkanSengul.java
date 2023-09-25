@@ -14,8 +14,8 @@ public class DialogContentSerkanSengul extends Parent {
 
     }
 
-    @FindBy(className = "login")
-    public WebElement SingButton;
+   // @FindBy(className = "login")
+   // public WebElement SingButton;
 
     @FindBy(id = "email_create")
     public WebElement Email;
