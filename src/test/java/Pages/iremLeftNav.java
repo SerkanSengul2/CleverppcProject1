@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class iremLeftNav extends Parent {
     public iremLeftNav() {PageFactory.initElements(GWD.getDriver(),this);}
 
-    @FindBy(linkText = "Dresses")
+    @FindBy(xpath = "(//a[@title='Dresses'])[2]")
     public WebElement dressesBtn;
 
 
