@@ -4,7 +4,7 @@ import Pages.DialogContent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
-public class _02_Ability_to_Login_UserSerkanS {
+public class _02_AbilitytoLoginUser {
     DialogContent dc=new DialogContent();
 
     @Then("Enter E-mail adress And Password")

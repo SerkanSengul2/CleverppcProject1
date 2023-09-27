@@ -7,7 +7,7 @@ import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-public class _13_DeleteProductSerkanS {
+public class _13_DeleteProduct {
     DialogContent dc=new DialogContent();
 
     @Then("Enter Product Searchbox")

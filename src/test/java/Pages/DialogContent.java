@@ -182,6 +182,81 @@ public class DialogContent extends Parent {
     public WebElement Proceed;
     @FindBy(css = "[title='Delete']")
     public WebElement DeleteBtn;
+    @FindBy(css = "a[class='product-name']")
+    public List<WebElement> summerDress;
+
+    @FindBy(css = "button[name='Submit'] > span")
+    public WebElement addToCart;
+
+    @FindBy(css = "span[title='Continue shopping']")
+    public WebElement continueShopping;
+
+    @FindBy(css = "a[title='View my shopping cart']")
+    public WebElement shoppingCart;
+
+    @FindBy(css = "span[id='summary_products_quantity']")
+    public WebElement shoppingText;
+
+
+    @FindBy(id = "passwd")
+    public  WebElement password;
+
+
+
+    @FindBy (xpath = "(//a[@class='product-name'])[1]")
+    public WebElement addToBtn;
+
+    @FindBy(css = "[class='exclusive']")
+    public WebElement addToCartBtn;
+
+    @FindBy(css = "[title='Proceed to checkout']")
+    public WebElement checkoutBtn;
+
+    @FindBy (xpath = "(//a[@title='Proceed to checkout'])[2]")
+    public WebElement checkoutBtn2;
+
+    @FindBy(css = "[name='processAddress']")
+    public WebElement checkoutBtn3;
+
+    @FindBy(css = "input[type='checkbox']")
+    public WebElement checkBoxBtn;
+
+    @FindBy(name = "processCarrier")
+    public WebElement checkoutBtn4;
+
+    @FindBy(id = "paypal-standard-btn")
+    public WebElement paypalBtn;
+
+    @FindBy(css = "div[class='message']")
+    public WebElement paypalErrorMsg;
+
+    @FindBy(id = "ccBillForm")
+    public WebElement creditCartBtn;
+
+    @FindBy(xpath = "//body[text()='Invalid request (1).']")
+    public WebElement creditCartErrorMsg;
+
+    @FindBy(css = "[title='Pay by bank wire']")
+    public WebElement bankCartBtn;
+
+    @FindBy(css = "span[id='amount']")
+    public WebElement total1;
+
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    public WebElement checkoutBtn5;
+
+    @FindBy(css = "[class='price']")
+    public WebElement total2;
+
+    @FindBy(css = "[class='alert alert-success']")
+    public WebElement message;
+
+    @FindBy(css = "[title='Go to your order history page']")
+    public WebElement orderHistory;
+    @FindBy(xpath = "(//a[@class='color-myaccount'])[1]")
+    public WebElement orderMessage;
+
+
 
     public WebElement ElementGet(String element) {
         switch (element) {

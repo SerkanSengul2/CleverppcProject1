@@ -1,30 +1,21 @@
 package StepDefinitions;
 
-import Pages.nurhayatPages.DialogContentNurhayat;
-import Pages.nurhayatPages.LeftNavnurhayat;
+import Pages.DialogContent;
+import Pages.LeftNav;
+
 import Utilities.GWD;
-import io.cucumber.java.bs.A;
+
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 
-import java.sql.Driver;
 
 public class _07_OrderingAndPayment {
-    DialogContentNurhayat dc = new DialogContentNurhayat();
-    LeftNavnurhayat ln = new LeftNavnurhayat();
+    DialogContent dc = new DialogContent();
+    LeftNav ln = new LeftNav();
 
-    @Given("There are products in the cart")
-    public void thereAreProductsInTheCart() {
-        GWD.getDriver().get("https://Cleverppc.com/prestashop4/");
-        dc.Myclick(dc.signInBtn);
-        dc.MysendKeys(dc.email, "nurqatester@gmail.com");
-        dc.MysendKeys(dc.password, "123456");
-        dc.Myclick(dc.submitLoginBtn);
-    }
 
     @When("User clicks on cart and Checkout button")
     public void userClicksOnCartAndCheckoutButton() {
@@ -39,6 +30,7 @@ public class _07_OrderingAndPayment {
         dc.Myclick(dc.checkoutBtn2);
         dc.Myclick(dc.checkoutBtn3);
     }
+
     @And("User select shipment method and terms of service")
     public void userSelectShipmentMethodAndTermsOfService() {
         dc.checkBoxBtn.sendKeys(Keys.SPACE);

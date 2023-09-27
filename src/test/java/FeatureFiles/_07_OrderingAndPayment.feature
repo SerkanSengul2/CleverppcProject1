@@ -1,7 +1,12 @@
 Feature:Order data and Payment
 
+  Background:
+    Given  Navigate to Site
+    When Click "SingButton"
+    Then Enter E-mail adress And Password
+    And Click on Sing in
+
   Scenario: Order data and Payment
-    Given There are products in the cart
     When User clicks on cart and Checkout button
     Then User selects an adress
     And User select shipment method and terms of service

@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-public class _08_Sending_EmailSerkanS {
+public class _08_SendingEmail {
     DialogContent dc=new DialogContent();
 
     @And("Click Contact Us button")

@@ -1,9 +1,8 @@
 package StepDefinitions;
 
-import Pages.iremDialogContent;
-import Pages.iremLeftNav;
+import Pages.DialogContent;
+import Pages.LeftNav;
 import Utilities.GWD;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,16 +10,11 @@ import org.testng.Assert;
 
 
 public class _06_CheckingProductsAddedCart {
-    iremDialogContent dc = new iremDialogContent();
-    iremLeftNav ln = new iremLeftNav();
+    DialogContent dc=new DialogContent();
+    LeftNav ln=new LeftNav();
 
     @Given("navigate to dresses page")
     public void navigateToDressesPage() {
-        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-        dc.Myclick(dc.signIn);
-        dc.MysendKeys(dc.email, "serkan@gmail.com");
-        dc.MysendKeys(dc.password, "12345");
-        dc.Myclick(dc.submitButton);
         ln.Myclick(ln.dressesBtn);
     }
 

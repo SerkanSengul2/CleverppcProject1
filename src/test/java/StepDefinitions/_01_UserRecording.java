@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class _01_User_RecordingSerkanS {
+public class _01_UserRecording {
 
     DialogContent dc=new DialogContent();
 
@@ -29,7 +29,7 @@ public class _01_User_RecordingSerkanS {
     public void writeAndClick(String Email, String Click) {
         WebElement EmailS = dc.ElementGet(Email);
         WebElement BtnClick = dc.ElementGet(Click);
-        dc.MysendKeys(EmailS, "Grp1829Techno3@gmail.com");
+        dc.MysendKeys(EmailS, "TECHNOGrupp3@gmail.com");
         dc.Myclick(BtnClick);
     }
 
@@ -57,29 +57,6 @@ public class _01_User_RecordingSerkanS {
 
     }
 
-
-//    @Then("Select Title,Enter Firstname,Lastname,Password and Date of Birth")
-//    public void Fill_in_The_Required_Blanks(DataTable dt) {
-//        List<List<String>> items = dt.asLists(String.class);
-//        for (int i = 0; i < items.size(); i++) {
-//
-//
-//        }
-//        dc.Myclick(dc.MrSelect);
-//        dc.MysendKeys(dc.Firstname, "TestFirstname");
-//        dc.MysendKeys(dc.LastName, "TestLastName");
-//        dc.MysendKeys(dc.Password, "test123");
-//
-//        Select SelectDays = new Select(dc.Days);
-//        SelectDays.selectByValue("17");
-//
-//        Select SelectMonths = new Select(dc.Months);
-//        SelectMonths.selectByValue("4");
-//
-//
-//        Select SelectYears = new Select(dc.Years);
-//        SelectYears.selectByValue("1990");
-//    }
 
     @And("Click Register Button")
     public void clickRegisterButton() {

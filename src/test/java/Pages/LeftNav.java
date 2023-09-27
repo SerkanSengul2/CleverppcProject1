@@ -25,6 +25,11 @@ public class LeftNav extends Parent {
     @FindBy(id = "search_query_top")
     public WebElement search;
 
+    @FindBy(xpath = "(//a[@title='Dresses'])[2]")
+    public WebElement dressesBtn;
+
+    @FindBy(xpath = "(//*[@title='Dresses'])[2]")
+    public WebElement dresBtn;
     public WebElement GetWebelement(String element) {
         switch (element) {
         }
